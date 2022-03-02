@@ -1,0 +1,261 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Tarun}{Singh Mahar}{ \urlstyle{same}
+\href{mailto:tarunrpmahar@gmail.com}{tarunrpmahar@gmail.com} | 9760856822 |\\
+Amoun,Khatima,U.S.Nagar, Uttarakhand, 262308 (IN)
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Lovely Professional\\ University}
+\descript{BTech in Computer Science\\ and Engineering}
+\location{August 2020 | India, Punjab}
+CGPA: 8.4/10.0
+\sectionsep
+
+\subsection{Alakshya Senior \\Secondary School}
+\descript{Intermediate | April 2015}
+\location{Uttarakhand, India}
+Percentage: 86.2%
+\sectionsep
+
+\subsection{Alakshya Public School}
+\descript{Matriculate | March 2013}
+\location{Uttarakhand, India}
+Percentage: 77.9%
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/tarunrpmahar}{\bf tarunrpmahar} \\
+LinkedIn://  \href{https://www.linkedin.com/in/tarunrpmahar/}{\bf tarunrpmahar} \\
+HackerRank:// \href{https://www.hackerrank.com/tarunrpmahar}{\bf tarunrpmahar} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+\textbullet{}C-Sharp \textbullet{} ASP.NET Core\\ \textbullet{} Object-Oriented-Design\\ 
+\textbullet{} HTML \textbullet{}CSS \textbullet{} JavaScript\\ 
+\textbullet{} SQL  \\ 
+\sectionsep
+\subsection{Tools:}
+\textbullet{}Git \textbullet{}Azure DevOps \textbullet{}Visual Studio \textbullet{}SSMS
+\sectionsep
+\subsection{Familiar:}
+\textbullet{}Python \textbullet{} Python-Django \textbullet{} Sitecore\\
+\textbullet{} SDL Tridion
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Data Structure\\
+Software Engineering \\
+Cloud Computing \\
+Computer Networks \\
+\sectionsep
+
+\subsection{Online Courses}
+Udemy:- C-sharp\\
+Udemy:- ASP.NET MVC \\
+Simplilearn:- Python Development Suite \\
+Udemy:- JavaScript \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Celebal Technologies}
+\descript{| Dotnet Developer}
+\location{Feb 2021 - Present | Jaipur, India}
+\vspace{\topsep}
+\begin{tightemize}
+\item Wrote highly maintainable code in ASP.NET core using C-Sharp at the backend to incorporate new features, fixed bugs using approved troubleshooting methods and delivered unit-tested systems within stipulated timeframes. 
+\item Technologies used: C-Sharp, ASP.NET Core, SQL Server, HTML, CSS,
+JavaScript, MVC
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Cognizant}
+\descript{| Programmer Analyst Trainee}
+\location{Aug 2020 - Feb 2021 | Chennai, India}
+\vspace{\topsep}
+\begin{tightemize}
+\item I used to go through Project-specific functional aspects of the client's requirement and maintained the Legacy code and coordinated with the Product Owners and implemented new features required by
+them.
+\item Technologies used: C-Sharp, ASP.NET Framework, SQL Server, HTML, CSS, JavaScript, MVC
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Cognizant}
+\descript{| Internship }
+\location{Feb 2020 - June 2020 | Bangalore, India}
+\vspace{\topsep}
+\begin{tightemize}
+\item Going through business requirement document and work as per BRD and develop the applications.
+\item Worked on ASP.NET MVC and created a web application that allows  Teachers and Students to connect and share their resources on a regular basis digitally.
+\item Technologies used: C-Sharp, ASP.NET Framework, SQL Server, HTML, CSS, JavaScript, MVC
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Python-Django Ecommerce Site}\\
+\location{}
+\textbf{\href{https://github.com/tarunrpmahar/Python-Django/tree/main/Ecommerce}{https://github.com/tarunrpmahar/Python-Django/tree/main/Ecommerce}}
+\begin{tightemize}
+\item Created a web application using python-Django framework where
+we store items with functionality of adding to cart, deleting from cart and searching item.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Teacher Student Connect web application}\\
+\location{}
+\textbf{\href{https://github.com/tarunrpmahar/ASP.NET_MVC/}{https://github.com/tarunrpmahar/ASP.NET}}
+\begin{tightemize}
+\item An Interactive UI platform that allows the Teachers and Students to
+digitally connect. Developed the Web Application using ASP.NET
+MVC.
+\item Creating an online Repository that contains a collection of learning
+and teaching materials flowing from Teachers and Students on a
+regular basis.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Bookstore Web application}\\
+\location{}
+\begin{tightemize}
+\item Created a web application using python-Django framework where I have stored books with the functionality of adding to cart, removing from cart, searching the books, and purchasing interface link using Paypal API.
+\item Used bootstrap for creating an interactive interface for user.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certification} 
+\begin{tabular}{rll}
+Az-900 & Microsoft azure fundamentals\\
+Codechef  & Certification of Participation (SnackDown 2019)\\
+Simplilearn  & Certification of Completion (All-in-One Python
+Development Suite)\\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
